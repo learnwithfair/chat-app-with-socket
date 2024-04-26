@@ -1,9 +1,14 @@
 ## Run the client server
 
-cd client
-npm start
+```bash
+- cd client
+- npm start
+```
 
 ## Run Server (Command)
 
-In the current directory
-node server.js
+In the base directory run->
+
+```bash
+- node server.js
+```

@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
 let users = []; // for Data store
 io.on("connection", (socket) => {
     console.log("User connected", socket.id);
-    
-    socket.on("chat", (data) => {       
+
+    socket.on("chat", (data) => {
         users.push(data);
         io.emit("transfer", data);
 
@@ -38,6 +38,6 @@ io.on("connection", (socket) => {
 
 });
 
-app.listen(8000, () => {
-    console.log("Server Run at http://localhost:8080");
+app.listen(5000, () => {
+    console.log("Server Run at http://localhost:5000");
 })
